@@ -27,12 +27,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kalam&family=Raleway&display=swap');
 
         body {
-            max-width: 800px;
-            margin: auto;
-            padding: 24px;
-            font-family: 'Raleway', sans-serif;
-            
 
+            font-family: 'Raleway', sans-serif;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+            margin: auto;
         }
 
         h1,
@@ -197,294 +199,303 @@
     </style>
 </head>
 
-<body>
-    <section id="header" class="d-flex flex-wrap">
-        <div class="custom-col flex-grow-1">
-            <div class="cv-name">
-                <div>
-                    <h1 class="">DAVIDE</h1>
-                </div>
-                <div>
-                    <h1 class="">BLEGGI</h1>
-                </div>
-                <h2 class="mt-1">Web Developer</h2>
-            </div>
-        </div>
-        <div class="flex-grow-2 d-flex flex-wrap">
-            <div class="custom-col">
-                <div class="cv-pi">
-                    <div id="position" class="cv-pi-item">
+<body class="d-flex align-items-center">
+    <div style="overflow:auto" class="p-4 px-5 w-100">
+        <div style="max-width:800px" class="m-auto">
+            <section id="header" class="d-flex flex-wrap">
+                <div class="custom-col flex-grow-1">
+                    <div class="cv-name">
                         <div>
-                            <i class="fa fa-solid fa-location-dot fa-xs"></i>
+                            <h1 class="">DAVIDE</h1>
                         </div>
-                        <p class="">Bussolengo (VR)</p>
-                    </div>
-                    <div id="birthday" class="cv-pi-item">
                         <div>
-                            <i class="fa fa-birthday-cake fa-xs"></i>
+                            <h1 class="">BLEGGI</h1>
                         </div>
-                        <p class="">04/09/1994</p>
+                        <h2 class="mt-1">Web Developer</h2>
                     </div>
                 </div>
-            </div>
-            <div class="custom-col">
-                <div class="cv-pi">
-                    <div id="phone" class="cv-pi-item">
-                        <div>
-                            <i class="fa fa-phone fa-xs"></i>
+                <div class="flex-grow-2 d-flex flex-wrap">
+                    <div class="custom-col">
+                        <div class="cv-pi">
+                            <div id="position" class="cv-pi-item">
+                                <div>
+                                    <i class="fa fa-solid fa-location-dot fa-xs"></i>
+                                </div>
+                                <p class="">Bussolengo (VR)</p>
+                            </div>
+                            <div id="birthday" class="cv-pi-item">
+                                <div>
+                                    <i class="fa fa-birthday-cake fa-xs"></i>
+                                </div>
+                                <p class="">04/09/1994</p>
+                            </div>
                         </div>
-                        <p class="">+39 346 1650042</p>
                     </div>
-                    <div id="mail" class="cv-pi-item">
-                        <div>
-                            <i class="fa fa-at fa-xs"></i>
+                    <div class="custom-col">
+                        <div class="cv-pi">
+                            <div id="phone" class="cv-pi-item">
+                                <div>
+                                    <i class="fa fa-phone fa-xs"></i>
+                                </div>
+                                <p class="">+39 346 1650042</p>
+                            </div>
+                            <div id="mail" class="cv-pi-item">
+                                <div>
+                                    <i class="fa fa-at fa-xs"></i>
+                                </div>
+                                <p class="">davide.bleggi@outlook.it</p>
+                            </div>
                         </div>
-                        <p class="">davide.bleggi@outlook.it</p>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section id="intro" class="row mb-4">
+                <div class="custom-col col-xs-12 col-sm-6">
+                    <div id="chi-sono">
+                        <h3 class="item-title">CHI SONO?</h3>
+                        <p>Recentemente laureato in Informatica a Verona
+                            con un anno di esperienza nel mondo della
+                            consulenza informatica. Attualmente mi
+                            occupo di sviluppo web lato front-end, ma
+                            ambisco ad acquisire competenze anche
+                            lato back-end per poter arrivare a ricoprire la
+                            figura di full-stack developer per lo sviluppo e
+                            gestione di applicativi anche in completa autonomia.</p>
+                    </div>
+                </div>
+                <div class="custom-col col-xs-12 col-sm-6">
+
+                    <div id="skills">
+                        <div class="w-50 text-end">
+                            <h3 class="item-title">SKILLS</h3>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="text-end">
+                                <h4>Vue.js</h4>
+                            </div>
+                            <div>
+                                <div class="bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item ">
+                            <div class="text-end">
+                                <h4>Javascript</h4>
+                            </div>
+                            <div>
+                                <div class="bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="text-end">
+                                <h4>HTML/CSS</h4>
+                            </div>
+                            <div>
+                                <div class="bar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="text-end">
+                                <h4>git</h4>
+                            </div>
+                            <div>
+                                <div class="bar" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="text-end">
+                                <h4>React.js</h4>
+                            </div>
+                            <div>
+                                <div class="bar" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="text-end">
+                                <h4>Java</h4>
+                            </div>
+                            <div>
+                                <div class="bar" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="text-end">
+                                <h4>Laravel PHP</h4>
+                            </div>
+                            <div>
+                                <div class="bar" style="width: 20%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <section id="experience">
+                <h3 class="item-title">ESPERIENZA</h3>
+                <div class="row">
+                    <div class="entry-date custom-col col-md-2 col-sm-12">
+                        <p>8/2022 - in corso</p>
+                    </div>
+                    <div class="custom-col col-md-10 col-sm-12">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h5>Front-end developer e Release Manager Junior</h5>
+                            </div>
+                            <div class="entry-subtitle">
+                                <h6>Fincons Group</h6>
+                            </div>
+                        </div>
+                        <div class="entry-description">
+                            <p>
+                                Sviluppo front-end di un gestionale di risorse interno all'azienda. Sviluppo di piccole
+                                modifiche
+                                lato front-end per gestionale del cliente e gestione dei rilasci del team aziendale
+                                verso
+                                nostro
+                                cliente, importante società bancaria su territorio italiano.
+                            </p>
+                        </div>
+                        <div class="entry-tag">
+                            Vue.js / Git
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="entry-date custom-col col-md-2 col-sm-12">
+                        <p>2021 - 8/2022</p>
+                        <div class="date-tag">
+                            <p>full time</p>
+                        </div>
+
+                    </div>
+                    <div class="custom-col col-md-10 col-sm-12">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h5>Web developer</h5>
+                            </div>
+                            <div class="entry-subtitle">
+                                <h6>Fincons Group</h6>
+                            </div>
+                        </div>
+                        <div class="entry-description">
+                            <p>
+                                Personalizzazione lato codice (JS, HTML, CSS) su piattaforma CMS kajabi e data analysis
+                                di
+                                utenze
+                                per società di formazione per content creator.
+                            </p>
+                        </div>
+                        <div class="entry-tag">
+                            javascript / HTML-CSS / Python-Pandas
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="entry-date custom-col col-md-2 col-sm-12">
+                        <p>2021 -2022</p>
+                        <div class="date-tag">
+                            <p>full time</p>
+                        </div>
+
+                    </div>
+                    <div class="custom-col col-md-10 col-sm-12">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h5>Tirocinante</h5>
+                            </div>
+                            <div class="entry-subtitle">
+                                <h6>Università degli studi di Verona</h6>
+                            </div>
+                        </div>
+                        <div class="entry-description">
+                            <p>
+                                Realizzazione di un applicativo per la vendita e lo scambio di menù bundle in ambito
+                                ristorativo.
+                            </p>
+                        </div>
+                        <div class="entry-tag">
+                            PHP Laravel / React.js
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="educazione">
+                <h3 class="item-title">EDUCAZIONE</h3>
+                <div class="row">
+                    <div class="entry-date custom-col col-md-2 col-sm-12">
+                        <p>8/2018 - 2022</p>
+                    </div>
+                    <div class="custom-col col-md-10 col-sm-12">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h5>Laurea triennale in informatica</h5>
+                            </div>
+                            <div class="entry-subtitle">
+                                <h6>Università degli studi di Verona</h6>
+                            </div>
+                        </div>
+                        <div class="entry-description">
+                            <p>
+                                Acquisizione di competenze necessarie per operare negli ambiti della progettazione,
+                                realizzazione, sviluppo, gestione e manutenzione di sistemi informatici.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="entry-date custom-col col-md-2 col-sm-12">
+                        <p>2013 - 2016</p>
+                    </div>
+                    <div class="custom-col col-md-10 col-sm-12">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h5>Laurea triennale in design del prodotto industriale</h5>
+                            </div>
+                            <div class="entry-subtitle">
+                                <h6>Politecnico di Milano</h6>
+                            </div>
+                        </div>
+                        <div class="entry-description">
+                            <p>
+                                Personalizzazione lato codice (JS, HTML, CSS) su piattaforma CMS kajabi e data analysis
+                                di
+                                utenze
+                                per società di formazione per content creator.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="entry-date custom-col col-md-2 col-sm-12">
+                        <p>8/2013</p>
+
+                    </div>
+                    <div class="custom-col col-md-10 col-sm-12">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h5>maturità artistica</h5>
+                            </div>
+                            <div class="entry-subtitle">
+                                <h6>Istituto d’arte N. Nani</h6>
+                            </div>
+                        </div>
+                        <div class="entry-description">
+                            <p>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="lingue">
+                <h3 class="item-title">LINGUE</h3>
+                <p><span style="font-weight: bold;">Inglese</span> - B1</p>
+
+            </section>
         </div>
-    </section>
-    <section id="intro" class="row mb-4">
-        <div class="custom-col col-xs-12 col-sm-6">
-            <div id="chi-sono">
-                <h3 class="item-title">CHI SONO?</h3>
-                <p>Recentemente laureato in Informatica a Verona
-                    con un anno di esperienza nel mondo della
-                    consulenza informatica. Attualmente mi
-                    occupo di sviluppo web lato front-end, ma
-                    ambisco ad acquisire competenze anche
-                    lato back-end per poter arrivare a ricoprire la
-                    figura di full-stack developer per lo sviluppo e
-                    gestione di applicativi anche in completa autonomia.</p>
-            </div>
-        </div>
-        <div class="custom-col col-xs-12 col-sm-6">
-
-            <div id="skills">
-                <div class="w-50 text-end">
-                    <h3 class="item-title">SKILLS</h3>
-                </div>
-
-                <div class="bar-item">
-                    <div class="text-end">
-                        <h4>Vue.js</h4>
-                    </div>
-                    <div>
-                        <div class="bar" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="bar-item ">
-                    <div class="text-end">
-                        <h4>Javascript</h4>
-                    </div>
-                    <div>
-                        <div class="bar" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="bar-item">
-                    <div class="text-end">
-                        <h4>HTML/CSS</h4>
-                    </div>
-                    <div>
-                        <div class="bar" style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="bar-item">
-                    <div class="text-end">
-                        <h4>git</h4>
-                    </div>
-                    <div>
-                        <div class="bar" style="width: 65%;"></div>
-                    </div>
-                </div>
-                <div class="bar-item">
-                    <div class="text-end">
-                        <h4>React.js</h4>
-                    </div>
-                    <div>
-                        <div class="bar" style="width: 40%;"></div>
-                    </div>
-                </div>
-                <div class="bar-item">
-                    <div class="text-end">
-                        <h4>Java</h4>
-                    </div>
-                    <div>
-                        <div class="bar" style="width: 50%;"></div>
-                    </div>
-                </div>
-                <div class="bar-item">
-                    <div class="text-end">
-                        <h4>Laravel PHP</h4>
-                    </div>
-                    <div>
-                        <div class="bar" style="width: 20%;"></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-    <section id="experience">
-        <h3 class="item-title">ESPERIENZA</h3>
-        <div class="row">
-            <div class="entry-date custom-col col-md-2 col-sm-12">
-                <p>8/2022 - in corso</p>
-            </div>
-            <div class="custom-col col-md-10 col-sm-12">
-                <div class="entry-header">
-                    <div class="entry-title">
-                        <h5>Front-end developer e Release Manager Junior</h5>
-                    </div>
-                    <div class="entry-subtitle">
-                        <h6>Fincons Group</h6>
-                    </div>
-                </div>
-                <div class="entry-description">
-                    <p>
-                        Sviluppo front-end di un gestionale di risorse interno all'azienda. Sviluppo di piccole
-                        modifiche
-                        lato front-end per gestionale del cliente e gestione dei rilasci del team aziendale verso nostro
-                        cliente, importante società bancaria su territorio italiano.
-                    </p>
-                </div>
-                <div class="entry-tag">
-                    Vue.js / Git
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="entry-date custom-col col-md-2 col-sm-12">
-                <p>2021 - 8/2022</p>
-                <div class="date-tag">
-                    <p>full time</p>
-                </div>
-
-            </div>
-            <div class="custom-col col-md-10 col-sm-12">
-                <div class="entry-header">
-                    <div class="entry-title">
-                        <h5>Web developer</h5>
-                    </div>
-                    <div class="entry-subtitle">
-                        <h6>Fincons Group</h6>
-                    </div>
-                </div>
-                <div class="entry-description">
-                    <p>
-                        Personalizzazione lato codice (JS, HTML, CSS) su piattaforma CMS kajabi e data analysis di
-                        utenze
-                        per società di formazione per content creator.
-                    </p>
-                </div>
-                <div class="entry-tag">
-                    javascript / HTML-CSS / Python-Pandas
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="entry-date custom-col col-md-2 col-sm-12">
-                <p>2021 -2022</p>
-                <div class="date-tag">
-                    <p>full time</p>
-                </div>
-
-            </div>
-            <div class="custom-col col-md-10 col-sm-12">
-                <div class="entry-header">
-                    <div class="entry-title">
-                        <h5>Tirocinante</h5>
-                    </div>
-                    <div class="entry-subtitle">
-                        <h6>Università degli studi di Verona</h6>
-                    </div>
-                </div>
-                <div class="entry-description">
-                    <p>
-                        Realizzazione di un applicativo per la vendita e lo scambio di menù bundle in ambito
-                        ristorativo.
-                    </p>
-                </div>
-                <div class="entry-tag">
-                    PHP Laravel / React.js
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="educazione">
-        <h3 class="item-title">EDUCAZIONE</h3>
-        <div class="row">
-            <div class="entry-date custom-col col-md-2 col-sm-12">
-                <p>8/2018 - 2022</p>
-            </div>
-            <div class="custom-col col-md-10 col-sm-12">
-                <div class="entry-header">
-                    <div class="entry-title">
-                        <h5>Laurea triennale in informatica</h5>
-                    </div>
-                    <div class="entry-subtitle">
-                        <h6>Università degli studi di Verona</h6>
-                    </div>
-                </div>
-                <div class="entry-description">
-                    <p>
-                        Acquisizione di competenze necessarie per operare negli ambiti della progettazione, realizzazione, sviluppo, gestione e manutenzione di sistemi informatici.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="entry-date custom-col col-md-2 col-sm-12">
-                <p>2013 - 2016</p>
-            </div>
-            <div class="custom-col col-md-10 col-sm-12">
-                <div class="entry-header">
-                    <div class="entry-title">
-                        <h5>Laurea triennale in design del prodotto industriale</h5>
-                    </div>
-                    <div class="entry-subtitle">
-                        <h6>Politecnico di Milano</h6>
-                    </div>
-                </div>
-                <div class="entry-description">
-                    <p>
-                        Personalizzazione lato codice (JS, HTML, CSS) su piattaforma CMS kajabi e data analysis di
-                        utenze
-                        per società di formazione per content creator.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="entry-date custom-col col-md-2 col-sm-12">
-                <p>8/2013</p>
-
-            </div>
-            <div class="custom-col col-md-10 col-sm-12">
-                <div class="entry-header">
-                    <div class="entry-title">
-                        <h5>maturità artistica</h5>
-                    </div>
-                    <div class="entry-subtitle">
-                        <h6>Istituto d’arte N. Nani</h6>
-                    </div>
-                </div>
-                <div class="entry-description">
-                    <p>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="lingue">
-        <h3 class="item-title">LINGUE</h3>
-        <p><span style="font-weight: bold;">Inglese</span> - B1</p>
-
-    </section>
+    </div>
 </body>
 
 </html>

@@ -196,6 +196,21 @@
         .entry-subtitle h6 {
             text-align: right;
         }
+
+        .btn {
+            border-radius: 0px;
+        }
+
+        .btn-dark {
+            background-color: black;
+        }
+
+        @media print {
+            .no-print,
+            .no-print * {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -482,7 +497,7 @@
                         </div>
                         <div class="entry-description">
                             <p>
-                                Con indirizzo di specializzazione in design del prodotto.
+                                Indirizzo di specializzazione in design del prodotto.
                             </p>
                         </div>
 
@@ -493,7 +508,26 @@
             <section id="lingue">
                 <h3 class="item-title">LINGUE</h3>
                 <p><span style="font-weight: bold;">Inglese</span> - B1</p>
+            </section>
 
+            <section id="print-section" class="no-print">
+                <div class="row">
+                    <div class="col col-md-10 col-sm-12">
+                        <p>*Questo pagina è ottimizzata per la stampa. Nonostante ciò se ne richiede la stampa solo per
+                            stretta necessità. Grazie.</p>
+                    </div>
+                    <div class="col col-md-2 col-sm-12">
+                        <div class="w-100 h-100 ps-md-3 ps-sm-0 py-sm-2 py-md-0">
+                            <button id="print-btn" onclick="window.print()" class="btn btn-dark h-100 w-100">
+                                <div class="text-white">
+                                    <div>
+                                        <i class="fa fa-solid fa-print fa-xs"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </div>

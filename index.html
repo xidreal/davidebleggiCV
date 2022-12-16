@@ -25,9 +25,10 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kalam&family=Raleway&display=swap');
+        
 
         body {
-
+            
             font-family: 'Raleway', sans-serif;
             flex-direction: column;
             justify-content: center;
@@ -35,6 +36,11 @@
             display: flex;
             height: 100vh;
             margin: auto;
+        }
+
+        body > *{
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
         }
 
         h1,

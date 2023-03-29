@@ -225,18 +225,33 @@
             background-color: black;
         }
 
+        .scroll-container{
+                overflow:auto;
+                page-break-inside: avoid;
+        }
+
         @media print {
 
             .no-print,
             .no-print * {
                 display: none !important;
             }
+
+            body{
+                justify-content: flex-start;
+            }
+
+            .scroll-container{
+                overflow:visible;
+                page-break-inside: avoid;
+        }
+          
         }
     </style>
 </head>
 
 <body class="d-flex align-items-center">
-    <div style="overflow:auto" class="p-4 px-3 w-100">
+    <div style="" class="p-4 px-3 w-100 scroll-container">
         <div style="max-width:800px" class="m-auto">
             <section id="header" class="d-flex flex-wrap">
                 <div class="custom-col d-flex flex-grow-1">
